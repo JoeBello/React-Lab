@@ -34,7 +34,7 @@ const ReactLogo = styled(Logo)`
   filter: drop-shadow(0 0 2em #61dafbaa);
 `
 
-export default function Root() {
+export default function App() {
   return (
     <>
       <div>

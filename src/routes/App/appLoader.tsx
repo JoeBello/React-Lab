@@ -6,8 +6,8 @@ const doSomething = function() {
     })
 }
 
-async function rootLoader() {
-    console.log('rootLoader');
+export default async function appLoader() {
+    console.log('appLoader');
     
     const response = await doSomething()
 
@@ -15,5 +15,3 @@ async function rootLoader() {
 
     return { response }
 }
-
-export default rootLoader
