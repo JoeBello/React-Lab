@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Notes
+# misc
 notes.md
+scrap.js
