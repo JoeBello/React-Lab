@@ -1,21 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { App, appLoader } from './routes/App'
-import { ErrorElement } from './components'
-import './root.css'
+import React from "react"
+import ReactDOM from "react-dom/client"
+import Container from "@mui/material/Container"
+import { Router } from "./routes"
 
-const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <App />,
-		loader: appLoader,
-		errorElement: <ErrorElement />
-	}
-])
+import "./root.css"
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-	<React.StrictMode>
-		<RouterProvider router={router} />
-	</React.StrictMode>,
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+    <React.StrictMode>
+        <Container maxWidth="md">
+            <Router />
+        </Container>
+    </React.StrictMode>
 )
