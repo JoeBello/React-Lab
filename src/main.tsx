@@ -6,9 +6,9 @@ import { Router } from "./routes"
 import "./root.css"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <React.StrictMode>
-        <Container maxWidth="md">
-            <Router />
-        </Container>
-    </React.StrictMode>
+	<React.StrictMode>
+		<Container maxWidth="lg">
+			<Router />
+		</Container>
+	</React.StrictMode>
 )
