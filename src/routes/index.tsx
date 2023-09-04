@@ -1,16 +1,25 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { ErrorElement } from "../components/pages"
-import Shell from "../Shell"
+import FlareIcon from "@mui/icons-material/Flare"
+import GpsFixedIcon from "@mui/icons-material/GpsFixed"
+import PsychologyIcon from "@mui/icons-material/Psychology"
+import SchemaIcon from "@mui/icons-material/Schema"
+import SurroundSoundIcon from "@mui/icons-material/SurroundSound"
+import { ApolloClient } from "./Apollo Client"
 import { Context } from "./Context"
+import { ErrorElement } from "../components/pages"
 import { References } from "./References"
 import { SideEffects } from "./SideEffects"
 import { State } from "./State"
-import GpsFixedIcon from "@mui/icons-material/GpsFixed"
-import FlareIcon from "@mui/icons-material/Flare"
-import PsychologyIcon from "@mui/icons-material/Psychology"
-import SurroundSoundIcon from "@mui/icons-material/SurroundSound"
+import Shell from "../Shell"
 
 export const routes = [
+	{
+		path: "/apollo-client",
+		element: <ApolloClient />,
+		errorElement: <ErrorElement />,
+		label: "Apollo Client",
+		Icon: SchemaIcon,
+	},
 	{
 		path: "/context",
 		element: <Context />,
