@@ -47,7 +47,7 @@ export default function State() {
 	}
 
 	return (
-		<Box>
+		<Box display="flex" flexDirection="column" alignItems="center">
 			<h1>State</h1>
 			<ToggleButtonGroup
 				color="primary"
