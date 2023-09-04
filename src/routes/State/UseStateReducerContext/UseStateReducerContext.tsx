@@ -35,7 +35,7 @@ function UseReducerUseContextParent() {
 	return (
 		<>
 			<Box display="flex" flexDirection="column" alignItems="center">
-				<h2>useReducer + useContext Parent</h2>
+				<h2>useReducer + useContext</h2>
 				<Typography sx={{ mb: 2 }}>
 					`useReducer` and `useContext` can be used together to centralize some portion of
 					potentially complex application state in a single component. The state bearing
