@@ -3,6 +3,7 @@ import { ErrorElement } from "../components/pages"
 import { App, appLoader } from "./App"
 import { Context } from "./Context"
 import { References } from "./References"
+import { SideEffects } from "./SideEffects"
 import { State } from "./State"
 
 const router = createBrowserRouter([
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
 	{
 		path: "/references",
 		element: <References />,
+		errorElement: <ErrorElement />,
+	},
+	{
+		path: "/side-effects",
+		element: <SideEffects />,
 		errorElement: <ErrorElement />,
 	},
 	{
