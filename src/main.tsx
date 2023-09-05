@@ -4,7 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, gql } from "@apollo/client
 import { Router } from "./routes"
 
 const client = new ApolloClient({
-	uri: "https://swapi-graphql.netlify.app/.netlify/functions/index",
+	uri: "https://rickandmortyapi.com/graphql",
 	cache: new InMemoryCache(),
 })
 
